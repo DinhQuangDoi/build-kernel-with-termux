@@ -1,5 +1,6 @@
 ### TG@dinhanhtu005
-
+### Install Termux
+- Download [Termux](https://termux.com) apk from [Here](https://f-droid.org/repo/com.termux_118.apk)
 ### Update Termux & install proot.
 - `pkg update && pkg upgrade -y`
 - `pkg install proot-distro -y`
@@ -20,11 +21,12 @@
 - If you want to add user do it after update and install all necessary tools because the tools installation process will not be interrupted or encounter any error with user root(root@localhost:~#).
 
 ```
+### Start compiling.
 - Clone your kernel source.
 
-- Edit or create new script build.sh, you can also refer to my script and edit important parts like kernel name, device config name, path etc...
+- Let's "cd" to kernel scr and edit or create new script build.sh, you can also refer to my script and edit important parts like kernel name, device config name, path etc...
 
-### Start compiling.
 - `./your-scrip-build.sh HOSTLDFLAGS="-L/usr/lib/aarch64-linux-gnu -Wl,-rpath=/usr/lib/aarch64-linux-gnu"`
 
+- Hope this information will be useful to you.
 - Good luck with your compilation!
