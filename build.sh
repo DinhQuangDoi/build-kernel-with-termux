@@ -6,13 +6,13 @@ echo "##### Setting Global Variables #####"
 kernel_dir="${PWD}"
 objdir="${kernel_dir}/out"
 anykernel="${HOME}/anykernel"
-kernel_name="phoeniX-Kernel"
-zip_name="${kernel_name}-$(date +"%Y%m%d-%H%M")-signed.zip"
+kernel_name="phoeniX-Kernel" # Your kernel name
+zip_name="${kernel_name}-$(date +"%Y%m%d-%H%M")-signed.zip" # Your kernel suffix name after compilation is complete
 
 echo "##### Export Path and Environment Variables #####"
 
-export CONFIG_FILE="vendor/kona-perf_defconfig"
-export ARCH="arm64"
+export CONFIG_FILE="vendor/kona-perf_defconfig" # Your device_defconfig please edit it
+export ARCH="arm64" # Your device structure
 export SUBARCH="arm64"
 export CC="clang"
 export LLVM="1"
@@ -21,11 +21,11 @@ export CLANG_TRIPLE="aarch64-linux-gnu-"
 export CROSS_COMPILE="aarch64-linux-gnu-"
 export CROSS_COMPILE_ARM32="arm-linux-gnueabi-"
 export LD="aarch64-linux-gnu-ld"
-export KBUILD_BUILD_HOST=TermuxUbuntuProot
+export KBUILD_BUILD_HOST=TermuxUbuntuProot # Your hos name
 export KBUILD_BUILD_USER=Lixin # Your name
 
 echo "##### Setting Parallel Jobs #####"
-NPROC=$(nproc --all) # use all cpu threads, reduce value if compile fails
+NPROC=$(nproc --all) # Use all cpu threads, reduce value if compile fails
 echo "##### ${NPROC} Parallel Jobs #####"
 
 echo "##### Generating Defconfig ######"
