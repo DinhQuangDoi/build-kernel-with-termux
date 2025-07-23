@@ -1,25 +1,28 @@
 ### TG@dinhanhtu005
-### Install Termux
+### Install Termux.
 - Download [Termux](https://termux.com) apk from [Here](https://f-droid.org/repo/com.termux_118.apk)
-### Update Termux & install proot.
+### My Ubuntu Termux repo:
+- (https://github.com/DinhQuangDoi/ubuntu)
+### If you want install manual
+- Update Termux & install proot.
 ```
 pkg update && pkg upgrade -y
 pkg install proot-distro -y
 ```
-### Install Ubuntu.
+- Install Ubuntu.
 ```
 proot-distro install ubuntu
 ```
-### Login to Ubuntu.
+- Login to Ubuntu.
 ```
 proot-distro login ubuntu --user root
 ```
 
-### Update Ubuntu.
+- Update Ubuntu.
 ```
 apt update && apt upgrade -y
 ```
-### Install tool & compiler package required.
+- Install tool & compiler package required.
 ```
 apt install git make gcc clang libssl-dev pkg-config flex bison libelf-dev libncurses-dev python3 python-is-python3 dos2unix curl unzip zip openjdk-17-jre -y
 ```
