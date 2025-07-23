@@ -2,7 +2,7 @@
 ### Install Termux.
 - Download [Termux](https://termux.com) apk from [Here](https://f-droid.org/repo/com.termux_118.apk)
 ### My Ubuntu Termux repo:
-- (https://github.com/DinhQuangDoi/ubuntu)
+- https://github.com/DinhQuangDoi/ubuntu
 ### If you want install manual
 - Update Termux & install proot.
 ```
