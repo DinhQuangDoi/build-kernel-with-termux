@@ -27,4 +27,4 @@
 ### Start compiling.
 - `./your-scrip-build.sh HOSTLDFLAGS="-L/usr/lib/aarch64-linux-gnu -Wl,-rpath=/usr/lib/aarch64-linux-gnu"`
 
-###Good luck with your compilation!
+- Good luck with your compilation!
