@@ -77,7 +77,7 @@ fi
 
 if [ ! -d "${anykernel}" ]; then
   echo "##### Cloning Anykernel3 #####"
-  git clone -q https://github.com/AndroidGeeksYT/AnyKernel3.git "${anykernel}"
+  git clone https://github.com/ryukftw/AnyKernel3.git "${anykernel}"
   if [[ $? -ne 0 ]]; then
     echo "##### Failed to Clone Anykernel3 #####"
     exit 1
