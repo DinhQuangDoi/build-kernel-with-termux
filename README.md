@@ -39,7 +39,7 @@ apt install git make gcc clang libssl-dev pkg-config flex bison libelf-dev libnc
 - Let's "cd" to kernel scr and edit or create new script build.sh, you can also refer to my script and edit important parts like kernel name, device config name, path etc...
 - For kernel cheat player: If you want your kernel to be able to execute drivers like QX, RT, GT or any other proprietary drivers you need to edit your device_defconfig, open and edit config with nano or you can find the path /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/your-scr/ to delete line CONFIG_MODULE_SIG_FORCE=y & CONFIG_MODULE_SIG_SHA512=y then delete or comment CONFIG_MODULE_SIG=y like this # CONFIG_MODULE_SIG is not set.
 ```
-  ./your-scrip-build.sh HOSTLDFLAGS="-L/usr/lib/aarch64-linux-gnu -Wl,-rpath=/usr/lib/aarch64-linux-gnu"`
+./your-scrip-build.sh HOSTLDFLAGS="-L/usr/lib/aarch64-linux-gnu -Wl,-rpath=/usr/lib/aarch64-linux-gnu"
 ```
 - Hope this information will be useful to you.
 - Good luck with your compilation!
