@@ -24,7 +24,7 @@ apt update && apt upgrade -y
 ```
 - Install tool & compiler package required.
 ```
-apt install git make gcc clang ld llvm libssl-dev pkg-config flex bison libelf-dev libncurses-dev python3 python-is-python3 dos2unix curl unzip zip openjdk-17-jre -y
+apt install git make gcc clang llvm libssl-dev pkg-config flex bison libelf-dev libncurses-dev python3 python-is-python3 dos2unix curl unzip zip openjdk-17-jre -y
 ```
 ### Note: 
 
